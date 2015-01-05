@@ -7,6 +7,8 @@
     };
 	
 	$.flat = function(flatkey,obj,result){
+		
+		if( obj == null ){ return; }
 		$.each(obj, function(key, val) {
 			
 			var newflatkey = '';
